@@ -1,0 +1,110 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+/* .about__wrapper {
+  position: relative;
+  max-width: 500px;
+  margin-left: auto;
+} */
+
+.about__wrapper::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  height: 596px;
+  background-image: url('../img/about-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 80px;
+}
+
+.about__wrapper-wrap {
+  display: inline-block;
+  max-width: 490px;
+}
+
+.about__wrapper-description {
+  margin-bottom: 48px;
+}
+
+.about__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 37px;
+}
+
+.about__description:last-child {
+  margin-bottom: 0;
+}
+
+.blockquote-description {
+  position: relative;
+  max-width: 430px;
+  padding-left: 31px;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.blockquote-description::before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  content: '\201F';
+  transform: rotateX(180deg);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  color: #6C0287;
+
+}
+
+.blockquote-description::after {
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+  content: '\201F';
+  transform: rotateY(180deg);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  color: #6C0287;
+
+}
+
+.blockquote-author {
+  position: relative;
+  max-width: 255px;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.blockquote-author::before {
+  position: absolute;
+  top: 0;
+  left: -110px;
+  content: '';
+  background-image: url('../img/boss.png');
+  width: 80px;
+  height: 80px;
+}
+
+.blockquote-author__cite {
+  font-style: normal;
+}

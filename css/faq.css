@@ -1,0 +1,71 @@
+.faq {
+  padding-top: 50px;
+}
+
+.faq__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.faq__item {
+  position: relative;
+  background-color: #fff;
+  color: #1C1A1A;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.faq__item:nth-child(2n) {
+  color: #fff;
+  background-color: #440F51;
+}
+
+.faq__item:last-child {
+  margin-bottom: 0;
+}
+
+.faq__item-btn {
+  position: absolute;
+  top: 50%;
+  right: 70px;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  background-color: transparent;
+  border: 2px solid #440F51;
+  border-radius: 50%;
+}
+
+.faq__item-btn__even {
+  border: 2px solid #FFFFFF;
+}
+
+.faq__item-btn::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.83051 0H10.5085V20H9.83051V0Z' fill='%23440F51'/%3E%3Cpath d='M0 10.1695V9.49153H20V10.1695H0Z' fill='%23440F51'/%3E%3C/svg%3E%0A");
+}
+
+.faq__item-btn__even::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.83063 0H10.5086V20H9.83063V0Z' fill='white'/%3E%3Cpath d='M0.00012207 10.1695V9.49153H20.0001V10.1695H0.00012207Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+
