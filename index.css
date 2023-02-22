@@ -1,8 +1,11 @@
 @import 'css/style.css';
 @import 'css/header.css';
-@import 'css/main.css';
+@import 'css/navigation.css';
+@import 'css/hero.css';
+@import 'css/holiday.css';
 @import 'css/hall.css';
 @import 'css/booking.css';
+@import 'css/form.css';
 @import 'css/about.css';
 @import 'css/reviews.css';
 @import 'css/faq.css';

@@ -1,0 +1,126 @@
+.hero {
+  padding-bottom: 50px;
+}
+.hero__container {
+  position: relative;
+  min-height: 823px;
+}
+
+.hero__container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+  width: 675px;
+  height: 762px;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 399px;
+  min-height: 209px;
+  margin-bottom: 150px;
+}
+
+.hero__wrapper-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.hero__wrapper-description_left {
+  max-width: 193px;
+}
+
+.hero__wrapper-description_right {
+  max-width: 166px;
+}
+
+.number {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: #CD06FF;
+}
+
+.new {
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: all-small-caps;
+  color: #CD06FF;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 636px;
+  min-height: 144px;
+}
+
+.hero__booking {
+  max-width: 374px;
+  height: 80px;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #6C0287;
+  border: none;
+  border-radius: 10px;
+  padding: 25px 69px;
+}
+
+.hero__down {
+  position: relative;
+  align-self: flex-end;
+  width: 97px;
+  height: 97px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hero__down::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='29' height='30' viewBox='0 0 29 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.425476' y='14.9162' width='1.82001' height='20.0201' transform='rotate(-44.9975 0.425476 14.9162)' fill='white'/%3E%3Crect x='14.5807' y='29.0737' width='1.82001' height='20.0201' transform='rotate(-134.997 14.5807 29.0737)' fill='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
+/* .hero__down::after {
+  position: absolute;
+  content: '|';
+  top: 50%;
+  left: 50%;
+  transform: rotate(-135deg);
+} */

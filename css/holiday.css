@@ -1,0 +1,72 @@
+.holiday {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.holiday__title {
+  max-width: 800px;
+  font-size: 40px;  
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 41px;
+}
+
+.holiday__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.holiday__item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 380px;
+  height: 228px;
+  padding-left: 40px;
+}
+
+.holiday__item_vr {
+  background-image: url('../img/holiday/vr.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.holiday__item_audio {
+  background-image: url('../img/holiday/audio.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.holiday__item_karaoke {
+  background-image: url('../img/holiday/karaoke.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.holiday__item_games {
+  background-image: url('../img/holiday/games.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.holiday__item_movie {
+  background-image: url('../img/holiday/movie.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.holiday__item_playstation{
+  background-image: url('../img/holiday/play-station.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.holiday__description {
+  max-width: 300px;
+  min-height: 56px;
+  font-size: 20px;
+  margin-bottom: 6px;
+}

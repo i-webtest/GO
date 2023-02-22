@@ -1,0 +1,8 @@
+.navigation__list {
+  display: flex;
+  gap: 40px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}

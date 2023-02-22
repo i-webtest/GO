@@ -1,6 +1,7 @@
 .booking {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: #440F51;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .booking__title {
@@ -8,5 +9,5 @@
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }

@@ -83,6 +83,10 @@ blockquote {
   margin: 0;
 }
 
+fieldset {
+  padding: 0;
+}
+
 iframe {
   border: none;
 }
@@ -110,4 +114,9 @@ iframe {
   max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+main {
+  padding-top: 25px;
+  padding-bottom: 50px;
 }

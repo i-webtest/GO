@@ -16,12 +16,16 @@
   margin: 0 auto;
 }
 
+.reviews__item {
+  display: flex;
+}
+
 .reviews__item:not(:last-child) {
   margin-bottom: 50px;
 }
 
 .reviews__figure {
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 20px;
 }
 
@@ -38,8 +42,8 @@
 }
 
 .reviews__description {
-  display: inline-block;
-  vertical-align: top;
+  /* display: inline-block;
+  vertical-align: top; */
   max-width: 680px;
   padding-top: 52px;
   font-weight: 400;

@@ -11,12 +11,15 @@
 }
 
 .faq__item {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   color: #1C1A1A;
   font-weight: 700;
   font-size: 24px;
-  padding: 30px 70px;
+  padding: 20px 70px;
   margin-bottom: 20px;
   list-style: none;
 }
@@ -31,10 +34,10 @@
 }
 
 .faq__item-btn {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  /* top: 50%;
   right: 70px;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   width: 46px;
   height: 46px;
   background-color: transparent;
