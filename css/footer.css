@@ -89,6 +89,24 @@
   margin-right: 28px;
 }
 
+.contacts__link {
+  transition: color 0.2s ease-in-out;
+}
+
+.contacts__link:hover {
+  color: #6C0287;
+}
+
+.contacts__link:active {
+  color: #640AA3;
+}
+
+.contacts__link:focus {
+  color: #840AA3;
+  outline: none;
+}
+
+
 .contacts__social {
   display: flex;
   gap: 26px;
@@ -97,6 +115,7 @@
 .contacts__social-link {
   display: block;
   line-height: 0;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
   outline: none;
 }
 
@@ -129,6 +148,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+.footer__developer-mail {
+  transition: color 0.2s ease-in-out;
 }
 
 .footer__developer-mail:hover {

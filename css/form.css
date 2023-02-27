@@ -28,6 +28,7 @@
   color: #000000;
   background-color: #FFFFFF;
   border-radius: 8px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
   cursor: pointer;
   outline: none;
 }
@@ -80,6 +81,7 @@
   width: 27px;
   height: 27px;
   margin-right: 12px;
+  transition: border 0.2s ease-in-out;
   outline: none;
 }
 
@@ -103,6 +105,7 @@
   width: 25px;
   height: 25px;
   margin-right: 12px;
+  transition: border 0.2s ease-in-out;
   outline: none;
 }
 
@@ -193,12 +196,14 @@
 .form__input-date {
   width: 134px;
   height: 52px;
+  transition: border 0.2s ease-in-out;
   outline: none;
 }
 
 .form__input-time {
   width: 134px;
   height: 52px;
+  transition: border 0.2s ease-in-out;
   outline: none;
 }
 
@@ -207,6 +212,7 @@
 .form__input-surname {
   width: 280px;
   height: 52px;
+  transition: border 0.2s ease-in-out;
   outline: none;
 }
 
@@ -216,6 +222,7 @@
 .form__input-mail {
   width: 300px;
   height: 52px;
+  transition: border 0.2s ease-in-out;
   outline: none;
 }
 
@@ -246,6 +253,7 @@
   background-color: #FFFFFF;
   border-radius: 10px;
   border: none;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
   outline: none;
 }
 

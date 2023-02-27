@@ -91,6 +91,7 @@
   background-color: #6C0287;
   border: none;
   border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
   padding: 25px 69px;
   outline: none;
 }
@@ -112,6 +113,7 @@
   background-color: transparent;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
   z-index: 10;
   cursor: pointer;
   outline: none;

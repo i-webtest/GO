@@ -9,6 +9,7 @@
 
 .navigation__link {
   outline: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .navigation__link:hover {

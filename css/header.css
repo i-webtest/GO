@@ -19,6 +19,31 @@
   height: 66px;
 }
 
+.header__logo-line {
+  color: #CD06FF;
+  transition: color 0.2s ease-in-out;
+}
+
+.header__logo-g {
+  transition: color 0.2s ease-out;
+}
+
+.header__logo-o {
+  transition: color 0.2s ease-in;
+}
+
+.header__link:hover .header__logo-g {
+  color: #CD06FF;
+}
+
+.header__link:hover .header__logo-o {
+  color: #CD06FF;
+}
+
+.header__link:hover .header__logo-line {
+  color: #fff;
+}
+
 .header__order {
   max-width: 280px;
   min-height: 55px;
@@ -32,6 +57,7 @@
   padding-left: 32px;
   padding-right: 32px;
   outline: none;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .header__order:hover {
@@ -48,3 +74,4 @@
   background-color: #6C0287;
   border: 3px solid #6C0287;
 }
+
