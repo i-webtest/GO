@@ -6,3 +6,19 @@
   line-height: 50px;
   text-transform: uppercase;
 }
+
+.navigation__link {
+  outline: none;
+}
+
+.navigation__link:hover {
+  color: #6C0287;
+}
+
+.navigation__link:active {
+  color: #640AA3;
+}
+
+.navigation__link:focus {
+  color: #840AA3;
+}

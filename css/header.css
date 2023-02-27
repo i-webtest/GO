@@ -21,7 +21,7 @@
 
 .header__order {
   max-width: 280px;
-  height: 55px;
+  min-height: 55px;
   font-size: 22px;
   line-height: 30px;
   text-transform: uppercase;
@@ -31,4 +31,20 @@
   border-radius: 10px;
   padding-left: 32px;
   padding-right: 32px;
+  outline: none;
+}
+
+.header__order:hover {
+  background-color: #6C0287;
+  border: 3px solid #6C0287;
+}
+
+.header__order:active {
+  background-color: #640AA3;
+  border: 3px solid #000000;
+}
+
+.header__order:focus {
+  background-color: #6C0287;
+  border: 3px solid #6C0287;
 }

@@ -71,7 +71,31 @@
           <div class="hero__buttons">
             <button class="hero__booking" type="button">Забронировать</button>
 
-            <div class="hero__down"></div>
+            <button class="hero__down" type="button">
+              <svg
+                class="hero__down-arrow"
+                width="29"
+                height="30"
+                viewBox="0 0 29 30"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.425537"
+                  y="14.9161"
+                  width="1.82001"
+                  height="20.0201"
+                  transform="rotate(-44.9975 0.425537 14.9161)"
+                />
+                <rect
+                  x="14.5807"
+                  y="29.0737"
+                  width="1.82001"
+                  height="20.0201"
+                  transform="rotate(-134.997 14.5807 29.0737)"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -357,31 +381,91 @@
             <li class="faq__item">
               <h3>Можно ли забронировать комнату онлайн?</h3>
 
-              <button class="faq__item-btn faq__item-btn__odd"></button>
+              <button class="faq__item-btn faq__item-btn__odd">
+                <svg
+                  class="faq__item-btn-open faq__item-btn__odd-open"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
+                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
+                </svg>
+              </button>
             </li>
 
             <li class="faq__item">
               <h3>Могут ли мне вернуть деньги за бронь?</h3>
 
-              <button class="faq__item-btn faq__item-btn__even"></button>
+              <button class="faq__item-btn faq__item-btn__even">
+                <svg
+                  class="faq__item-btn-open faq__item-btn__even-open"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
+                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
+                </svg>
+              </button>
             </li>
 
             <li class="faq__item">
               <h3>Какая комната самая популярная?</h3>
 
-              <button class="faq__item-btn faq__item-btn__odd"></button>
+              <button class="faq__item-btn faq__item-btn__odd">
+                <svg
+                  class="faq__item-btn-open faq__item-btn__odd-open"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
+                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
+                </svg>
+              </button>
             </li>
 
             <li class="faq__item">
               <h3>Как получить VIP карту?</h3>
 
-              <button class="faq__item-btn faq__item-btn__even"></button>
+              <button class="faq__item-btn faq__item-btn__even">
+                <svg
+                  class="faq__item-btn-open faq__item-btn__even-open"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
+                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
+                </svg>
+              </button>
             </li>
 
             <li class="faq__item">
               <h3>Какая комната самая популярная?</h3>
 
-              <button class="faq__item-btn faq__item-btn__odd"></button>
+              <button class="faq__item-btn faq__item-btn__odd">
+                <svg
+                  class="faq__item-btn-open faq__item-btn__odd-open"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
+                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
@@ -514,4 +598,12 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    document.addEventListener('click', (event) => {
+      if (event.target.matches('button')) {
+        event.target.focus();
+      }
+    });
+  </script>
 </html>

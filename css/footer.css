@@ -97,7 +97,26 @@
 .contacts__social-link {
   display: block;
   line-height: 0;
+  outline: none;
 }
+
+
+
+.contacts__social-link:hover {
+  color: #EADEED;
+}
+
+.contacts__social-link:focus {
+  color: #EADEED;
+  border: 1px solid #CD06FF;
+}
+
+.contacts__social-link:active {
+  color: #CD06FF;
+  border: none;
+}
+
+
 
 .footer__developer-wrapper {
   display: flex;
@@ -110,6 +129,19 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+.footer__developer-mail:hover {
+  color: #6C0287;
+}
+
+.footer__developer-mail:active {
+  color: #640AA3;
+}
+
+.footer__developer-mail:focus {
+  color: #840AA3;
+  outline: none;
 }
 
 .footer__list {

@@ -15,6 +15,8 @@
   height: 55px;
 }
 
+
+
 .form__input-button {
   width: 100%;
   height: 100%;
@@ -27,6 +29,22 @@
   background-color: #FFFFFF;
   border-radius: 8px;
   cursor: pointer;
+  outline: none;
+}
+
+.form__input-button:hover {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.form__input-button:focus {
+  border: 3px solid #640AA3;
+}
+
+.form__input-button:active {
+  color: #fff;
+  background-color: #6C0287;
+  border: 3px solid #FFFFFF;
 }
 
 .form__fieldset_game {
@@ -62,6 +80,11 @@
   width: 27px;
   height: 27px;
   margin-right: 12px;
+  outline: none;
+}
+
+.form__input-radio:focus {
+  border: 1px solid #CD06FF;
 }
 
 .form__fieldset-desktop {
@@ -80,6 +103,11 @@
   width: 25px;
   height: 25px;
   margin-right: 12px;
+  outline: none;
+}
+
+.form__input-checkbox:focus {
+  border: 1px solid #CD06FF;
 }
 
 .form__label-desktop {
@@ -165,12 +193,13 @@
 .form__input-date {
   width: 134px;
   height: 52px;
+  outline: none;
 }
 
 .form__input-time {
   width: 134px;
   height: 52px;
-  
+  outline: none;
 }
 
 
@@ -178,6 +207,7 @@
 .form__input-surname {
   width: 280px;
   height: 52px;
+  outline: none;
 }
 
 
@@ -186,6 +216,17 @@
 .form__input-mail {
   width: 300px;
   height: 52px;
+  outline: none;
+}
+
+.form__input-date:focus,
+.form__input-time:focus,
+.form__input-name:focus,
+.form__input-surname:focus,
+.form__input-count:focus,
+.form__input-phone:focus,
+.form__input-mail:focus {
+  border: 2px solid #CD06FF;
 }
 
 .form__wrapper-submit {
@@ -205,4 +246,19 @@
   background-color: #FFFFFF;
   border-radius: 10px;
   border: none;
+  outline: none;
+}
+
+.form__submit:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.form__submit:active {
+  background-color: #EADEED;
+  border: none;
+}
+
+.form__submit:focus {
+  border: 3px solid #6C0287;
 }
