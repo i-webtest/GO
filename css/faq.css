@@ -26,7 +26,7 @@
 
 .faq__item:nth-child(2n) {
   color: #fff;
-  background-color: #440F51;
+  background-color: var(--second-color);
 }
 
 .faq__item:last-child {
@@ -41,7 +41,7 @@
   width: 46px;
   height: 46px;
   background-color: transparent;
-  border: 2px solid #440F51;
+  border: 2px solid var(--second-color);
   border-radius: 50%;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
@@ -84,16 +84,16 @@
 
 .faq__item-btn__odd:hover {
   color: #fff;
-  background-color: #6C0287;
+  background-color: var(--purple-color);
 }
 
 .faq__item-btn__odd:active {
-  color: #6C0287;
+  color: var(--purple-color);
   background-color: transparent;
 }
 
 .faq__item-btn__even:hover {
-  color: #6C0287;
+  color: var(--purple-color);
   background-color: #fff;
 }
 

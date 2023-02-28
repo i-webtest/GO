@@ -20,7 +20,7 @@
 }
 
 .header__logo-line {
-  color: #CD06FF;
+  color: var(--main-color);
   transition: color 0.2s ease-in-out;
 }
 
@@ -33,11 +33,11 @@
 }
 
 .header__link:hover .header__logo-g {
-  color: #CD06FF;
+  color: var(--main-color);
 }
 
 .header__link:hover .header__logo-o {
-  color: #CD06FF;
+  color: var(--main-color);
 }
 
 .header__link:hover .header__logo-line {
@@ -52,7 +52,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: transparent;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--main-color);
   border-radius: 10px;
   padding-left: 32px;
   padding-right: 32px;
@@ -61,17 +61,17 @@
 }
 
 .header__order:hover {
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--purple-color);
+  border: 3px solid var(--purple-color);
 }
 
 .header__order:active {
-  background-color: #640AA3;
+  background-color: var(--dark-purple);
   border: 3px solid #000000;
 }
 
 .header__order:focus {
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--purple-color);
+  border: 3px solid var(--purple-color);
 }
 

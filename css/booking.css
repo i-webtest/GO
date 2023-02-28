@@ -1,5 +1,5 @@
 .booking {
-  background-color: #440F51;
+  background-color: var(--second-color);
   padding-top: 80px;
   padding-bottom: 80px;
 }

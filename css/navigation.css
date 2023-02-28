@@ -13,13 +13,13 @@
 }
 
 .navigation__link:hover {
-  color: #6C0287;
+  color: var(--purple-color);
 }
 
 .navigation__link:active {
-  color: #640AA3;
+  color: var(--dark-purple);
 }
 
 .navigation__link:focus {
-  color: #840AA3;
+  color: var(--light-purple);
 }

@@ -1,4 +1,5 @@
 .holiday {
+  min-height: 808px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -31,6 +32,14 @@
 
 .holiday__item:hover {
   transform: scale(1.1);
+}
+
+.holiday__item:nth-child(3n+2) {
+  transform: translateY(70px);
+}
+
+.holiday__item:hover:nth-child(3n+2) {
+  transform: scale(1.1) translateY(70px);
 }
 
 .holiday__item_vr {
