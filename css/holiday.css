@@ -26,6 +26,11 @@
   flex-basis: 380px;
   min-height: 228px;
   padding-left: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.holiday__item:hover {
+  transform: scale(1.1);
 }
 
 .holiday__item_vr {
