@@ -23,3 +23,17 @@
 .navigation__link:focus {
   color: var(--light-purple);
 }
+
+@media (max-width: 1200px) {
+  .navigation__list {
+    gap: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navigation {
+    display: none;
+  }
+}

@@ -9,44 +9,32 @@
   align-items: center;
 }
 
-.header__link {
-  width: 120px;
-  height: 66px;
+.header__btn-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 54px;
+  height: 29px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
-.header__logo {
-  width: 120px;
-  height: 66px;
+.header__btn-menu span {
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--purple-color);
 }
 
-.header__logo-line {
-  color: var(--main-color);
-  transition: color 0.2s ease-in-out;
-}
-
-.header__logo-g {
-  transition: color 0.2s ease-out;
-}
-
-.header__logo-o {
-  transition: color 0.2s ease-in;
-}
-
-.header__link:hover .header__logo-g {
-  color: var(--main-color);
-}
-
-.header__link:hover .header__logo-o {
-  color: var(--main-color);
-}
-
-.header__link:hover .header__logo-line {
-  color: #fff;
+.header__btn-menu span:last-child {
+  width: 31px;
 }
 
 .header__order {
-  max-width: 280px;
-  min-height: 55px;
+  position: relative;
+  top: 2px;
+  font-weight: 700;
   font-size: 22px;
   line-height: 30px;
   text-transform: uppercase;
@@ -58,6 +46,7 @@
   padding-right: 32px;
   outline: none;
   transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  padding: 11px 30px 10px;
 }
 
 .header__order:hover {
@@ -75,3 +64,57 @@
   border: 3px solid var(--purple-color);
 }
 
+@media (max-width: 1200px) {
+  .header {
+    padding-bottom: 15px;
+  }
+
+  .header__order {
+    top: 1px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 7px 24px 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding-top: 32px;
+  }
+
+  .header__btn-menu {
+    position: relative;
+    top: 3px;
+    display: flex;
+  }
+
+  .header__order {
+    top: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .header__btn-menu {
+    top: 4px;
+    width: 39px;
+    height: 20px;
+  }
+
+  .header__btn-menu span {
+    height: 4px;
+  }
+
+  .header__btn-menu span:last-child {
+    width: 22px;
+  }
+
+  .header__order {
+    display: none;
+  }
+}

@@ -9,19 +9,19 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Arial';
+  font-family: 'Arial Bold';
   font-style: normal;
   font-weight: 700;
-  src: local('Arial') url('../fonts/Arial-BoldMT.woff2') format('woff2'),
+  src: local('Arial-Bold') url('../fonts/Arial-BoldMT.woff2') format('woff2'),
     url('../fonts/Arial-BoldMT.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Arial';
+  font-family: 'Arial Black';
   font-style: normal;
   font-weight: 900;
-  src: local('Arial') url('../fonts/Arial-Black.woff2') format('woff2'),
+  src: local('Arial-Black') url('../fonts/Arial-Black.woff2') format('woff2'),
     url('../fonts/Arial-Black.woff') format('woff');
 }
 
@@ -43,9 +43,6 @@ body {
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   background-color: #1B1A1B;
   color: #FFFFFF;
 }
@@ -119,4 +116,26 @@ iframe {
 main {
   padding-top: 25px;
   padding-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  main {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
 }

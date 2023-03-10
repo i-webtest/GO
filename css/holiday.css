@@ -6,13 +6,20 @@
 
 .holiday__title {
   max-width: 800px;
+  /* font-family: 'Arial Bold', sans-serif; */
+  font-weight: 700;
   font-size: 40px;  
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
+  padding-right: 11px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 41px;
+  margin-bottom: 44px;
+}
+
+.holiday__title span {
+  padding-left: 11px;
 }
 
 .holiday__list {
@@ -53,7 +60,7 @@
   background-image: url('../img/holiday/audio.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  padding-bottom: 6px;
+  padding-bottom: 9px;
 }
 
 .holiday__item_karaoke {
@@ -74,7 +81,7 @@
   background-image: url('../img/holiday/movie.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  padding-bottom: 6px;
+  padding-bottom: 9px;
 }
 
 .holiday__item_playstation{
@@ -86,8 +93,8 @@
 
 .holiday__description {
   max-width: 300px;
-  /* min-height: 56px; */
+  font-weight: 700;
   font-size: 20px;
-  /* margin-bottom: 6px; */
+  line-height: 25px;
 }
 

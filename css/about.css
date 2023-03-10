@@ -1,14 +1,15 @@
 .about {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 
 .about__title {
+  font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 
 .about__wrapper {
@@ -22,7 +23,7 @@
   width: 100%;
   max-width: 600px;
   height: 596px;
-  background-image: url('../img/about-image.jpg');
+  background-image: url('../img/about/about-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   /* margin-right: 80px; */
@@ -31,18 +32,18 @@
 .about__wrapper-wrap {
   display: flex;
   flex-direction: column;
-  max-width: 490px;
+  max-width: 500px;
 }
 
 .about__wrapper-description {
-  margin-bottom: 48px;
+  margin-bottom: 57px;
 }
 
 .about__description {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 37px;
+  margin-bottom: 28px;
 }
 
 .about__description:last-child {
@@ -52,22 +53,23 @@
 .blockquote {
   display: flex;
   flex-direction: column;
+  max-width: 476px;
 }
 
 .blockquote-description {
   position: relative;
   max-width: 430px;
   padding-left: 31px;
-  margin-bottom: 39px;
   font-weight: 400;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
+  margin-bottom: 31px;
 }
 
 .blockquote-description::before {
   position: absolute;
-  top: -30px;
+  top: -28px;
   left: 0;
   content: '\201F';
   transform: rotateX(180deg);
@@ -81,7 +83,7 @@
 .blockquote-description::after {
   position: absolute;
   bottom: 0;
-  right: 45px;
+  right: 40px;
   content: '\201F';
   transform: rotateY(180deg);
   font-weight: 900;
@@ -107,7 +109,7 @@
   top: 0;
   left: -110px;
   content: '';
-  background-image: url('../img/boss.png');
+  background-image: url('../img/about/boss.png');
   width: 80px;
   height: 80px;
 }

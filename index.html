@@ -16,15 +16,21 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="index.css" />
 
+    <script src="js/index.js" type="module"></script>
+
     <title>GAME OVER</title>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="header__link" href="#">
-          <!-- <img class="header__logo" src="img/header/logo.svg" alt="Логотип GO" /> -->
+        <button class="header__btn-menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="header__link logo" href="#">
           <svg
-            class="header__logo"
+            class="header__logo logo__svg"
             width="120"
             height="66"
             viewBox="0 0 120 66"
@@ -32,17 +38,41 @@
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              class="header__logo-g"
+              class="header__logo-g logo__svg-g"
               d="M39.6553 40.0361V32.5898H56.7451V47.8486C53.4736 50.0784 50.5765 51.6003 48.0537 52.4141C45.5472 53.2116 42.5687 53.6104 39.1182 53.6104C34.8701 53.6104 31.4033 52.8861 28.7178 51.4375C26.0485 49.9889 23.9733 47.8324 22.4922 44.9678C21.0273 42.1032 20.2949 38.8154 20.2949 35.1045C20.2949 31.1982 21.1006 27.8047 22.7119 24.9238C24.3232 22.0267 26.6833 19.8294 29.792 18.332C32.2171 17.1764 35.4805 16.5986 39.582 16.5986C43.5371 16.5986 46.4912 16.9567 48.4443 17.6729C50.4137 18.389 52.0413 19.5039 53.3271 21.0176C54.6292 22.515 55.6058 24.4193 56.2568 26.7305L45.5879 28.6348C45.1484 27.2839 44.3997 26.2503 43.3418 25.5342C42.3001 24.818 40.9655 24.46 39.3379 24.46C36.9128 24.46 34.9759 25.3063 33.5273 26.999C32.0951 28.6755 31.3789 31.3366 31.3789 34.9824C31.3789 38.8561 32.1032 41.623 33.5518 43.2832C35.0166 44.9434 37.0511 45.7734 39.6553 45.7734C40.8923 45.7734 42.0723 45.5944 43.1953 45.2363C44.3184 44.8783 45.6042 44.2679 47.0527 43.4053V40.0361H39.6553Z"
             />
             <path
-              class="header__logo-o"
+              class="header__logo-o logo__svg-o"
               d="M61.9209 35.1289C61.9209 29.2858 63.5485 24.7367 66.8037 21.4814C70.0589 18.2262 74.5918 16.5986 80.4023 16.5986C86.3594 16.5986 90.9492 18.2018 94.1719 21.4082C97.3945 24.5983 99.0059 29.0742 99.0059 34.8359C99.0059 39.0189 98.2979 42.4531 96.8818 45.1387C95.4821 47.8079 93.4476 49.8913 90.7783 51.3887C88.1253 52.8698 84.8131 53.6104 80.8418 53.6104C76.8053 53.6104 73.4606 52.9674 70.8076 51.6816C68.1709 50.3958 66.0306 48.3613 64.3867 45.5781C62.7428 42.7949 61.9209 39.3118 61.9209 35.1289ZM72.9805 35.1777C72.9805 38.791 73.6478 41.387 74.9824 42.9658C76.3333 44.5446 78.1644 45.334 80.4756 45.334C82.8519 45.334 84.6911 44.5609 85.9932 43.0146C87.2952 41.4684 87.9463 38.6934 87.9463 34.6895C87.9463 31.3203 87.2627 28.8626 85.8955 27.3164C84.5446 25.7539 82.7054 24.9727 80.3779 24.9727C78.1481 24.9727 76.3577 25.762 75.0068 27.3408C73.6559 28.9196 72.9805 31.5319 72.9805 35.1777Z"
             />
-            <path class="header__logo-line" d="M0 34H1V66H0V34Z" />
-            <path class="header__logo-line" d="M0 66V65H51V66H0Z" />
-            <path class="header__logo-line" d="M120 32H119V0H120V32Z" />
-            <path class="header__logo-line" d="M120 0V1H69V0H120Z" />
+            <path class="header__logo-line logo__svg-line" d="M0 34H1V66H0V34Z" />
+            <path class="header__logo-line logo__svg-line" d="M0 66V65H51V66H0Z" />
+            <path class="header__logo-line logo__svg-line" d="M120 32H119V0H120V32Z" />
+            <path class="header__logo-line logo__svg-line" d="M120 0V1H69V0H120Z" />
+          </svg>
+
+          <svg
+            class="logo__svg-1024"
+            width="87"
+            height="55"
+            viewBox="0 0 87 55"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="header__logo-g logo__svg-g"
+              d="M27.3242 33.6289V27.6719H40.9961V39.8789C38.3789 41.6628 36.0612 42.8802 34.043 43.5312C32.0378 44.1693 29.6549 44.4883 26.8945 44.4883C23.4961 44.4883 20.7227 43.9089 18.5742 42.75C16.4388 41.5911 14.7786 39.8659 13.5938 37.5742C12.4219 35.2826 11.8359 32.6523 11.8359 29.6836C11.8359 26.5586 12.4805 23.8438 13.7695 21.5391C15.0586 19.2214 16.9466 17.4635 19.4336 16.2656C21.3737 15.3411 23.9844 14.8789 27.2656 14.8789C30.4297 14.8789 32.793 15.1654 34.3555 15.7383C35.931 16.3112 37.2331 17.2031 38.2617 18.4141C39.3034 19.612 40.0846 21.1354 40.6055 22.9844L32.0703 24.5078C31.7188 23.4271 31.1198 22.6003 30.2734 22.0273C29.4401 21.4544 28.3724 21.168 27.0703 21.168C25.1302 21.168 23.5807 21.8451 22.4219 23.1992C21.276 24.5404 20.7031 26.6693 20.7031 29.5859C20.7031 32.6849 21.2826 34.8984 22.4414 36.2266C23.6133 37.5547 25.2409 38.2188 27.3242 38.2188C28.3138 38.2188 29.2578 38.0755 30.1562 37.7891C31.0547 37.5026 32.0833 37.0143 33.2422 36.3242V33.6289H27.3242Z"
+              fill="white"
+            />
+            <path
+              class="header__logo-o logo__svg-o"
+              d="M45.1367 29.7031C45.1367 25.0286 46.4388 21.3893 49.043 18.7852C51.6471 16.181 55.2734 14.8789 59.9219 14.8789C64.6875 14.8789 68.3594 16.1615 70.9375 18.7266C73.5156 21.2786 74.8047 24.8594 74.8047 29.4688C74.8047 32.8151 74.2383 35.5625 73.1055 37.7109C71.9857 39.8464 70.3581 41.513 68.2227 42.7109C66.1003 43.8958 63.4505 44.4883 60.2734 44.4883C57.0443 44.4883 54.3685 43.974 52.2461 42.9453C50.1367 41.9167 48.4245 40.2891 47.1094 38.0625C45.7943 35.8359 45.1367 33.0495 45.1367 29.7031ZM53.9844 29.7422C53.9844 32.6328 54.5182 34.7096 55.5859 35.9727C56.6667 37.2357 58.1315 37.8672 59.9805 37.8672C61.8815 37.8672 63.3529 37.2487 64.3945 36.0117C65.4362 34.7747 65.957 32.5547 65.957 29.3516C65.957 26.6562 65.4102 24.6901 64.3164 23.4531C63.2357 22.2031 61.7643 21.5781 59.9023 21.5781C58.1185 21.5781 56.6862 22.2096 55.6055 23.4727C54.5247 24.7357 53.9844 26.8255 53.9844 29.7422Z"
+              fill="white"
+            />
+            <path class="header__logo-line logo__svg-line" d="M0 23H1V55H0V23Z" fill="#CD06FF" />
+            <path class="header__logo-line logo__svg-line" d="M0 55V54H51V55H0Z" fill="#CD06FF" />
+            <path class="header__logo-line logo__svg-line" d="M87 32H86V0H87V32Z" fill="#CD06FF" />
+            <path class="header__logo-line logo__svg-line" d="M87 0V1H36V0H87Z" fill="#CD06FF" />
           </svg>
         </a>
 
@@ -71,7 +101,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">GAME OVER</h1>
 
@@ -89,48 +119,46 @@
             </div>
           </div>
 
-          <div class="hero__buttons">
-            <button class="hero__booking" type="button">Забронировать</button>
+          <a class="hero__booking" href="#booking">Забронировать</a>
 
-            <button class="hero__down" type="button">
-              <svg
-                class="hero__down-arrow"
-                width="29"
-                height="30"
-                viewBox="0 0 29 30"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.425537"
-                  y="14.9161"
-                  width="1.82001"
-                  height="20.0201"
-                  transform="rotate(-44.9975 0.425537 14.9161)"
-                />
-                <rect
-                  x="14.5807"
-                  y="29.0737"
-                  width="1.82001"
-                  height="20.0201"
-                  transform="rotate(-134.997 14.5807 29.0737)"
-                />
-              </svg>
-            </button>
-          </div>
+          <a class="hero__down" href="#holiday">
+            <svg
+              class="hero__down-arrow"
+              width="29"
+              height="30"
+              viewBox="0 0 29 30"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.425537"
+                y="14.9161"
+                width="1.82001"
+                height="20.0201"
+                transform="rotate(-44.9975 0.425537 14.9161)"
+              />
+              <rect
+                x="14.5807"
+                y="29.0737"
+                width="1.82001"
+                height="20.0201"
+                transform="rotate(-134.997 14.5807 29.0737)"
+              />
+            </svg>
+          </a>
         </div>
-      </section>
+      </section> -->
 
-      <section class="holiday">
+      <!-- <section class="holiday" id="holiday">
         <div class="container">
-          <h2 class="holiday__title">У нас есть все для классного отдыха с друзьями!</h2>
+          <h2 class="holiday__title">У нас есть все для классного <span>отдыха с друзьями!</span></h2>
 
           <ul class="holiday__list">
             <li class="holiday__item holiday__item_vr">
               <p class="holiday__description">VR очки</p>
             </li>
             <li class="holiday__item holiday__item_audio">
-              <p class="holiday__description">Аудио-система 5.1 с отличным звуком</p>
+              <p class="holiday__description">Аудио-система 5.1 с&nbsp;отличным звуком</p>
             </li>
             <li class="holiday__item holiday__item_karaoke">
               <p class="holiday__description">Караоке (4 микрофона)</p>
@@ -154,19 +182,27 @@
 
           <ul class="hall__list">
             <li class="hall__item hall__item-vibes">
-              <h3 class="hall__item-title">80's vibes</h3>
+              <a href="" class="hall__link">
+                <h3 class="hall__item-title">80's vibes</h3>
+              </a>
             </li>
 
             <li class="hall__item hall__item-star">
-              <h3 class="hall__item-title">Star wars</h3>
+              <a href="" class="hall__link">
+                <h3 class="hall__item-title">Star wars</h3>
+              </a>
             </li>
 
             <li class="hall__item hall__item-west">
-              <h3 class="hall__item-title">Wild west</h3>
+              <a href="" class="hall__link">
+                <h3 class="hall__item-title">Wild west</h3>
+              </a>
             </li>
 
             <li class="hall__item hall__item-neon">
-              <h3 class="hall__item-title">Neon style</h3>
+              <a href="" class="hall__link">
+                <h3 class="hall__item-title">Neon style</h3>
+              </a>
             </li>
           </ul>
         </div>
@@ -205,7 +241,7 @@
 
                 <label class="form__label-console">
                   <input class="form__input-radio" type="radio" name="console" value="PlayStation" />
-                  PlayStation
+                  PlayStation 5
                 </label>
 
                 <label class="form__label-console">
@@ -268,12 +304,10 @@
 
               <div class="form__label-wrapper">
                 <label class="form__label-time form__label-date">
-                  <!-- Дата* -->
                   <input class="form__input-date" type="date" name="date" required />
                 </label>
 
                 <label class="form__label-time">
-                  <!-- Время* -->
                   <input class="form__input-time" type="time" name="time" required />
                 </label>
               </div>
@@ -289,7 +323,6 @@
               </label>
 
               <label class="form__label-time form__label-count">
-                <!-- Сколько человек -->
                 <input class="form__input-count" type="number" name="count" required />
               </label>
 
@@ -302,21 +335,11 @@
                 E-mail
                 <input class="form__input-phone" type="email" name="mail" required />
               </label>
-
-              <!-- <label class="form__label-time">
-                <input class="form__input-age" type="checkbox" name="age" value="I am over 18 years old" />
-                Я старше 18 лет
-              </label> -->
             </fieldset>
 
             <div class="form__wrapper-submit">
               <button class="form__submit" type="submit">Забронировать</button>
             </div>
-
-            <!-- <label>
-              <input type="checkbox" name="personal" value="I agree to the processing of personal data" required />
-              Согласен на обработку данных
-            </label> -->
           </form>
         </div>
       </section>
@@ -357,7 +380,7 @@
           <ul class="reviews__list">
             <li class="reviews__item">
               <figure class="reviews__figure">
-                <img class="reviews__image" src="img/image1.png" alt="Макс Самойлов" height="200" />
+                <img class="reviews__image" src="img/reviews/image1.png" alt="Макс Самойлов" height="200" />
                 <figcaption class="reviews__name">Макс Самойлов</figcaption>
               </figure>
 
@@ -369,7 +392,7 @@
 
             <li class="reviews__item">
               <figure class="reviews__figure">
-                <img class="reviews__image" src="img/image2.png" alt="Оксана Григорьева" height="200" />
+                <img class="reviews__image" src="img/reviews/image2.png" alt="Оксана Григорьева" height="200" />
                 <figcaption class="reviews__name">Оксана Григорьева</figcaption>
               </figure>
 
@@ -381,7 +404,7 @@
 
             <li class="reviews__item">
               <figure class="reviews__figure">
-                <img class="reviews__image" src="img/image3.png" alt="Никита Ященко" height="200" />
+                <img class="reviews__image" src="img/reviews/image3.png" alt="Никита Ященко" height="200" />
                 <figcaption class="reviews__name">Никита Ященко</figcaption>
               </figure>
 
@@ -400,7 +423,7 @@
 
           <ul class="faq__list">
             <li class="faq__item">
-              <h3>Можно ли забронировать комнату онлайн?</h3>
+              <h3 class="faq__item-title">Можно ли забронировать комнату онлайн?</h3>
 
               <button class="faq__item-btn faq__item-btn__odd">
                 <svg
@@ -418,7 +441,7 @@
             </li>
 
             <li class="faq__item">
-              <h3>Могут ли мне вернуть деньги за бронь?</h3>
+              <h3 class="faq__item-title">Могут ли мне вернуть деньги за бронь?</h3>
 
               <button class="faq__item-btn faq__item-btn__even">
                 <svg
@@ -436,7 +459,7 @@
             </li>
 
             <li class="faq__item">
-              <h3>Какая комната самая популярная?</h3>
+              <h3 class="faq__item-title">Какая комната самая популярная?</h3>
 
               <button class="faq__item-btn faq__item-btn__odd">
                 <svg
@@ -454,7 +477,7 @@
             </li>
 
             <li class="faq__item">
-              <h3>Как получить VIP карту?</h3>
+              <h3 class="faq__item-title">Как получить VIP карту?</h3>
 
               <button class="faq__item-btn faq__item-btn__even">
                 <svg
@@ -472,7 +495,7 @@
             </li>
 
             <li class="faq__item">
-              <h3>Какая комната самая популярная?</h3>
+              <h3 class="faq__item-title">Какая комната самая популярная?</h3>
 
               <button class="faq__item-btn faq__item-btn__odd">
                 <svg
@@ -490,21 +513,21 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer" id="contacts">
+    <!-- <footer class="footer" id="contacts">
       <div class="container">
         <h2 class="footer__title">Контакты</h2>
 
         <div class="footer__wrapper">
           <address class="contacts">
-            <p class="contacts__address">г. Москва ул.&nbsp;Аквамарина, 16</p>
+            <p class="contacts__address">г. Москва ул.&nbsp;Усачёва,&nbsp;29&nbsp;к3</p>
 
             <ul class="contacts__list">
               <li class="contacts__item contacts__item_phone">
                 <a class="contacts__link" href="tel:89509302893" aria-label="Ссылка на номер телефона"
-                  >8(950)930-28-93</a
+                  >8 (950) 930 - 28 - 93</a
                 >
               </li>
 
@@ -617,7 +640,7 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 
   <script>

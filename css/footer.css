@@ -1,8 +1,8 @@
 .footer {
   background-image: linear-gradient(#1B1A1B 0%,
     #370A37 100%);
-  padding-top: 50px;
-  padding-bottom: 10px;
+  padding-top: 51px;
+  padding-bottom: 21px;
 }
 
 .footer__title {
@@ -10,13 +10,13 @@
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 156px;
+  margin-bottom: 145px;
 }
 
 .contacts {
@@ -24,19 +24,16 @@
 }
 
 .contacts__address {
-  /* position: relative; */
   display: flex;
   align-items: center;
   width: 315px;
-  /* padding-left: 64px; */
-  margin-bottom: 38px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 42px;
 }
 
 .contacts__address::before {
-  /* position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%); */
   content: '';
   width: 40px;
   height: 32px;
@@ -46,25 +43,23 @@
 }
 
 .contacts__list {
-  margin-bottom: 39px;
+  margin-bottom: 36px;
 }
 
 .contacts__item {
   position: relative;
-  /* padding-left: 64px; */
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .contacts__item_phone {
   display: flex;
   align-items: center;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .contacts__item_phone::before {
-  /* position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%); */
   content: '';
   width: 32px;
   height: 32px;
@@ -76,19 +71,16 @@
 .contacts__item_mail {
   display: flex;
   align-items: center;
+  padding-left: 4px;
 }
 
 .contacts__item_mail::before {
-  /* position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%); */
   content: '';
   width: 32px;
   height: 32px;
   background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.667993 5.94725C5.05987 9.66669 12.7662 16.2103 15.0312 18.2506C15.3353 18.526 15.6614 18.666 16 18.666C16.3379 18.666 16.6634 18.5273 16.9668 18.2533C19.2337 16.2109 26.9401 9.66669 31.332 5.94725C31.6055 5.71612 31.6472 5.30987 31.4258 5.02731C30.914 4.37437 30.151 4 29.3333 4H2.66668C1.84899 4 1.08593 4.37438 0.574244 5.02738C0.352869 5.30988 0.394556 5.71612 0.667993 5.94725Z' fill='%23CD06FF'/%3E%3Cpath d='M31.6133 7.96303C31.377 7.85303 31.099 7.89141 30.9024 8.05941C26.0319 12.1883 19.8158 17.4807 17.86 19.243C16.7623 20.2338 15.2389 20.2338 14.1386 19.2417C12.054 17.3634 5.0735 11.4292 1.09763 8.05934C0.899688 7.89134 0.621063 7.85428 0.386687 7.96297C0.151062 8.07241 0 8.30809 0 8.56784V25.3335C0 26.8042 1.19594 28.0002 2.66669 28.0002H29.3334C30.8041 28.0002 32 26.8042 32 25.3335V8.56784C32 8.30809 31.8489 8.07178 31.6133 7.96303Z' fill='%23CD06FF'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  margin-right: 28px;
+  margin-right: 24px;
 }
 
 .contacts__link {
@@ -142,6 +134,10 @@
 .footer__developer-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .footer__copyright,
