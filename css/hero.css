@@ -151,6 +151,10 @@
 }
 
 @media (max-width: 1200px) {
+  .hero {
+    padding-bottom: 42px;
+  }
+
   .hero__container {
     min-height: 583px;
   }
@@ -220,7 +224,144 @@
 }
 
 @media (max-width: 1000px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+
+  .hero__container {
+    min-height: 537px;
+  }
+
+  .hero__container::after {
+    right: 40px;
+    width: 409px;
+    height: 479px;
+    background-image: url('../img/hero/banner-768.png');
+  }
+
   .hero__title {
     font-size: 86px;
+    padding-left: 3px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 70px;
+    margin-bottom: 50px;
+  }
+
+  .hero__wrapper {
+    max-width: 222px;
+    min-height: 107px;
+    margin-bottom: 99px;
+  }
+
+  .hero__wrapper-description_left {
+    max-width: 103px;
+  }
+
+  .number {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .hero__wrapper-text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .hero__wrapper-description_right {
+    max-width: 89px;
+  }
+
+  .new {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .hero__booking {
+    left: 0;
+    max-width: 214px;
+    min-height: 46px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    padding: 11px 33px;
+    z-index: 1;
+  }
+
+  .hero__down {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-bottom: 23px;
+  }
+  
+  .hero__container {
+    min-height: 204px;
+  }
+
+  .hero__container::after {
+    right: 20px;
+    width: 161px;
+    height: 179px;
+    background-image: url('../img/hero/banner-320.png');
+  }
+
+  .hero__title {
+    font-size: 35px;
+    letter-spacing: -0.08em;
+    padding-left: 1px;
+    margin-bottom: 6px;
+  }
+
+  .hero__description {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .hero__wrapper {
+    max-width: 139px;
+    min-height: 59px;
+    margin-bottom: 30px;
+  }
+
+  .hero__wrapper-description_left {
+    max-width: 65px;
+  }
+
+  .hero__wrapper-description_right {
+    max-width: 54px;
+  }
+
+  .number {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .new {
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 4px;
+    padding-left: 4px;
+  }
+
+  .hero__wrapper-text {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .hero__booking {
+    max-width: 117px;
+    min-height: 27px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 13px 7px;
   }
 }
