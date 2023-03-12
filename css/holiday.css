@@ -6,7 +6,6 @@
 
 .holiday__title {
   max-width: 800px;
-  /* font-family: 'Arial Bold', sans-serif; */
   font-weight: 700;
   font-size: 40px;  
   line-height: 50px;
@@ -23,17 +22,19 @@
 }
 
 .holiday__list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 40px 20px;
 }
 
 .holiday__item {
-  display: flex;
-  align-items: flex-end;
-  flex-basis: 380px;
-  min-height: 228px;
-  padding-left: 40px;
+  position: relative;
+  /* flex-basis: 380px; */
+  height: 228px;
+  background-repeat: no-repeat;
+  background-size: contain;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -51,50 +52,123 @@
 
 .holiday__item_vr {
   background-image: url('../img/holiday/vr.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 34px;
 }
 
 .holiday__item_audio {
   background-image: url('../img/holiday/audio.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 9px;
 }
 
 .holiday__item_karaoke {
   background-image: url('../img/holiday/karaoke.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 34px;
 }
 
 .holiday__item_games {
   background-image: url('../img/holiday/games.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 34px;
 }
 
 .holiday__item_movie {
   background-image: url('../img/holiday/movie.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 9px;
 }
 
 .holiday__item_playstation{
   background-image: url('../img/holiday/play-station.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 34px;
 }
 
 .holiday__description {
+  position: absolute;
+  top: 166px;
+  left: 40px;
   max-width: 300px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 28px;
 }
 
+@media (max-width: 1200px) {
+  .holiday {
+    padding-top: 41px;
+    padding-bottom: 35px;
+  }
+
+  .holiday__title {
+    max-width: 560px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-right: 10px;
+    margin-bottom: 36px;
+  }
+
+  .holiday__list {
+    gap: 30px 21px;
+  }
+
+  .holiday__item {
+    height: 172px;
+  }
+
+  .holiday__item:nth-child(3n+2) {
+    transform: translateY(52px);
+  }
+
+  .holiday__description {
+    top: 114px;
+    left: 20px;
+  }
+
+  .holiday__item_movie .holiday__description {
+    top: 83px;
+    max-width: 247px;
+  }
+
+  
+}
+
+@media (max-width: 1000px) {
+  .holiday {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .holiday__title {
+    max-width: 450px;
+    font-size: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .holiday__list {
+    grid-template: repeat(3, 1fr) / repeat(2, minmax(135px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .holiday__item {
+    width: 334px;
+    height: 200px;
+    /* max-width: 334px; */
+    /* height: 200px; */
+  }
+
+  .holiday__item:nth-child(3n+2) {
+    transform: translateY(0px);
+  }
+
+  .holiday__description {
+    top: 132px;
+    left: 30px;
+  }
+
+  .holiday__item_movie .holiday__description {
+    top: 132px;
+    max-width: 267px;
+  }
+}
+
+/* @media(max-width: 768px) {
+  
+} */
+
+@media (max-width: 600px) {
+
+}
