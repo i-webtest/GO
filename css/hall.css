@@ -1,5 +1,5 @@
 .hall {
-  padding-top: 50px;
+  padding-top: 89px;
   padding-bottom: 101px;
 }
 
@@ -14,7 +14,11 @@
 
 .hall__list {
   display: grid;
-  grid-template: repeat(2, 349px) / repeat(2, 580px);
+  /* grid-template: repeat(2, 349px) / repeat(2, 580px); */
+  grid-template: repeat(2, minmax(auto, 1fr)) / repeat(2, minmax(auto, 1fr));
+  /* grid-template-columns: repeat(2, auto); */
+  /* grid-template-rows: repeat(2, auto); */
+  /* grid-template-columns: repeat(auto-fill, minmax(auto, 1fr)); */
   gap: 20px;
 }
 
@@ -23,6 +27,9 @@
   /* align-items: center; */
   /* flex-basis: 580px; */
   /* height: 349px; */
+  max-width: 580px;
+  width: 100%;
+  height: 349px;
   background-size: contain;
 }
 
@@ -65,4 +72,104 @@
 .hall__item-neon {
   background-image: url('../img/hall/hall-4.jpg');
   background-repeat: no-repeat;
+}
+
+@media(max-width: 1240px) {
+  .hall {
+    padding-top: 87px;
+    padding-bottom: 69px;
+  }
+
+  .hall__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .hall__item {
+    max-width: 443px;
+    height: 267px;
+  }
+
+  .hall__item:nth-child(1) {
+    justify-self: flex-end;
+  }
+
+  .hall__item:nth-child(3) {
+    justify-self: flex-end;
+  }
+
+  .hall__item-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .hall__item:nth-child(2) .hall__item-title {
+    padding-left: 0;
+  }
+}
+
+@media(max-width: 1000px) {
+  .hall {
+    padding-top: 30px;
+    padding-bottom: 63px;
+  }
+
+  .hall__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+
+  .hall__list {
+    row-gap: 17px;
+  }
+
+  .hall__item {
+    max-width: 335px;
+    height: 200px;
+    background-size: cover;
+  }
+
+  .hall__item-title {
+    width: 129px;
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 24px;
+  }
+}
+
+@media(max-width: 600px) {
+  .hall {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .hall__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .hall__list {
+    grid-template: repeat(4, minmax(auto, 1fr)) / repeat(1, minmax(auto, 1fr));
+    row-gap: 10px;
+    justify-items: center;
+  }
+
+  .hall__item {
+    max-width: 280px;
+    height: 168px;
+  }
+
+  .hall__item:nth-child(1),
+  .hall__item:nth-child(3) {
+    justify-self: unset;
+  }
+
+  .hall__item-title {
+    font-size: 26px;
+    line-height: 34px;
+    padding-top: 0;
+  }
 }
