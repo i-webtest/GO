@@ -31,8 +31,6 @@
   align-items: center;
   width: 315px;
   font-weight: 700;
-  /* font-size: 24px;
-  line-height: 28px; */
   padding-left: 60px;
   margin-bottom: 42px;
 }
@@ -54,8 +52,6 @@
 .contacts__item {
   position: relative;
   font-weight: 700;
-  /* font-size: 24px;
-  line-height: 28px; */
 }
 
 .contacts__item_phone {

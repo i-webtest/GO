@@ -13,13 +13,6 @@
   margin-bottom: 40px;
 }
 
-.form__label {
-  /* flex-basis: 250px; */
-  /* height: 55px; */
-}
-
-
-
 .form__input-button {
   width: 250px;
   height: 55px;
@@ -93,9 +86,10 @@
 }
 
 .form__fieldset-desktop {
+  position: relative;
+  right: 43px;
   display: flex;
   flex-direction: column;
-  /* flex-basis: 300px; */
   border: none;
 }
 
@@ -152,8 +146,6 @@
   margin-bottom: 20px;
 }
 
-/* дата*/
-
 .form__fieldset-time {
   display: flex;
   justify-content: space-between;
@@ -180,11 +172,6 @@
   justify-content: space-between;
   width: 300px;
   height: 52px;
-}
-
-.form__label-count {
-  /* width: 300px;
-  height: 52px; */
 }
 
 .form__label-name, 
@@ -250,8 +237,6 @@
 }
 
 .form__submit {
-  /* width: 300px; */
-  /* height: 60px; */
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
@@ -297,6 +282,10 @@
     grid-template-columns: 280px 289px 255px;
     column-gap: 40px;
     margin: 0 auto 57px;
+  }
+
+  .form__fieldset-desktop {
+    right: 0;
   }
 
   .form__fieldset-console {
