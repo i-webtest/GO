@@ -314,7 +314,7 @@
     margin-bottom: 26px;
   }
 
-  .form__input-button {
+  .form__label-hall {
     width: 180px;
     height: 44px;
     font-size: 20px;
@@ -367,7 +367,7 @@
     margin-bottom: 50px;
   }
 
-  .form__input-button {
+  .form__label-hall {
     width: 150px;
     height: 38px;
     font-size: 16px;
@@ -478,7 +478,7 @@
     margin: 0 auto 30px;
   }
 
-  .form__input-button {
+  .form__label-hall {
     width: 130px;
     height: 30px;
     font-size: 14px;
