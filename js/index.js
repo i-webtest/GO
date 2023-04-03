@@ -1,3 +1,3 @@
-import { smothScroll } from './module/smothScroll.js';
+// import { smothScroll } from './module/smothScroll.js';
 
-smothScroll();
+// smothScroll();

@@ -1,3 +1,4 @@
+/*
 export const smothScroll = () => {
   const links = document.querySelectorAll('.navigation__link');
   const downBtn = document.querySelector('.hero__down');
@@ -44,3 +45,4 @@ export const smothScroll = () => {
     });
   });
 };
+*/

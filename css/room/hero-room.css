@@ -1,0 +1,119 @@
+.hero-room {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.hero-room::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero-room_bg-vibes::after {
+  background-image: url('../../img/vibes/hero-vibes-bg.jpg');
+}
+
+.hero-room_bg-wild::after {
+  background-image: url('../../img/wild/hero-wild-bg.jpg');
+}
+
+.hero-room_bg-neon::after {
+  background-image: url('../../img/neon/hero-neon-bg.jpg');
+}
+
+.hero-room_bg-star::after {
+  background-image: url('../../img/star/hero-star-bg.jpg');
+}
+
+.hero-room__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 335px;
+  padding-bottom: 335px;
+  margin-bottom: 100px;
+}
+
+.hero-room__description {
+  max-width: 1000px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .hero-room {
+    padding-bottom: 35px;
+  }
+  .hero-room::after {
+    height: 534px;
+  }
+
+  .hero-room__title {
+    padding-top: 227px;
+    padding-bottom: 227px;
+    margin-bottom: 70px;
+  }
+
+  .hero-room__description {
+    max-width: 800px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-room {
+    padding-bottom: 30px;
+  }
+
+  .hero-room::after {
+    height: 402px;
+  }
+
+  .hero-room__title {
+    font-size: 60px;
+    line-height: 120%;
+    padding-top: 165px;
+    padding-bottom: 165px;
+    margin-bottom: 60px;
+  }
+
+  .hero-room__description {
+    max-width: 688px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-room {
+    padding-bottom: 15px;
+  }
+
+  .hero-room::after {
+    height: 168px;
+  }
+
+  .hero-room__title {
+    font-size: 30px;
+    line-height: 120%;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    margin-bottom: 30px;
+  }
+
+  .hero-room__description {
+    font-size: 16px;
+  }
+}

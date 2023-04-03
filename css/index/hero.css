@@ -1,0 +1,370 @@
+.hero {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.hero__container {
+  position: relative;
+  min-height: 823px;
+}
+
+.hero__container::after {
+  content: '';
+  position: absolute;
+  right: 31px;
+  bottom: 0;
+  background-image: url('../../img/index/hero/banner.png');
+  background-repeat: no-repeat;
+  width: 675px;
+  height: 762px;
+}
+
+.hero__title {
+  font-family: 'Arial Black';
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 100px;
+  margin-bottom: 31px;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 399px;
+  min-height: 209px;
+  margin-bottom: 150px;
+}
+
+.hero__wrapper-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  text-align: center;
+  
+}
+
+.hero__wrapper-text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.hero__wrapper-description_left {
+  max-width: 193px;
+}
+
+.hero__wrapper-description_right {
+  max-width: 166px;
+}
+
+.number {
+  font-family: 'Arial Black';
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: var(--main-color);
+}
+
+.new {
+  font-family: 'Arial Black';
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 106px;
+  letter-spacing: 7px;
+  font-variant: all-small-caps;
+  color: var(--main-color);
+}
+
+.hero__booking {
+  position: relative;
+  display: block;
+  max-width: 374px;
+  min-height: 80px;
+  font-family: 'Arial Bold', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: var(--purple-color);
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 0 10px var(--purple-color);
+  padding: 25px 67px;
+  outline: none;
+}
+
+.hero__booking:hover, .hero__booking:focus {
+  background-color: var(--light-purple);
+}
+
+.hero__booking:active {
+  background-color: var(--dark-purple);
+}
+
+.hero__down {
+  position: absolute;
+  right: 50%;
+  bottom: 90px;
+  transform: translateX(50%);
+  width: 97px;
+  height: 97px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
+  z-index: 10;
+  cursor: pointer;
+  outline: none;
+}
+
+.hero__down-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -69%);
+}
+
+.hero__down:hover {
+  color: var(--purple-color);
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.hero__down:active {
+  color: #fff;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.hero__down:focus {
+  border: 1px solid var(--main-color);
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding-top: 10px;
+    padding-bottom: 42px;
+  }
+
+  .hero__container {
+    min-height: 583px;
+  }
+
+  .hero__container::after {
+    right: 60px;
+    bottom: 0;
+    width: 453px;
+    height: 520px;
+    background-image: url('../../img/index/hero/banner-1024.png');
+  }
+
+  .hero__title {
+    font-size: 120px;
+    margin-bottom: 21px;
+  }
+
+  .hero__description {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 29px;
+  }
+
+  .hero__wrapper {
+    max-width: 348px;
+    min-height: 173px;
+    margin-bottom: 80px;
+  }
+
+  .hero__wrapper-description_left {
+    max-width: 168px;
+  }
+
+  .hero__wrapper-description_right {
+    max-width: 140px;
+  }
+
+  .number {
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .hero__wrapper-text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .new {
+    font-size: 60px;
+    line-height: 85px;
+  }
+
+  .hero__booking {
+    max-width: 296px;
+    min-height: 64px;
+    left: 39px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 17px 47px;
+  }
+
+  .hero__down {
+    bottom: 46px;
+    width: 67px;
+    height: 67px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+
+  .hero__container {
+    min-height: 537px;
+  }
+
+  .hero__container::after {
+    right: 40px;
+    width: 409px;
+    height: 479px;
+    background-image: url('../../img/index/hero/banner-768.png');
+  }
+
+  .hero__title {
+    font-size: 86px;
+    padding-left: 3px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 70px;
+    margin-bottom: 50px;
+  }
+
+  .hero__wrapper {
+    max-width: 222px;
+    min-height: 107px;
+    margin-bottom: 99px;
+  }
+
+  .hero__wrapper-description_left {
+    max-width: 103px;
+  }
+
+  .number {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .hero__wrapper-text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .hero__wrapper-description_right {
+    max-width: 89px;
+  }
+
+  .new {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .hero__booking {
+    left: 0;
+    max-width: 214px;
+    min-height: 46px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    padding: 11px 33px;
+    z-index: 1;
+  }
+
+  .hero__down {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 5px;
+    padding-bottom: 23px;
+  }
+  
+  .hero__container {
+    min-height: 204px;
+  }
+
+  .hero__container::after {
+    right: 20px;
+    width: 161px;
+    height: 179px;
+    background-image: url('../../img/index/hero/banner-320.png');
+  }
+
+  .hero__title {
+    font-size: 35px;
+    letter-spacing: -0.08em;
+    padding-left: 1px;
+    margin-bottom: 6px;
+  }
+
+  .hero__description {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .hero__wrapper {
+    max-width: 139px;
+    min-height: 59px;
+    margin-bottom: 30px;
+  }
+
+  .hero__wrapper-description_left {
+    max-width: 65px;
+  }
+
+  .hero__wrapper-description_right {
+    max-width: 54px;
+  }
+
+  .number {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .new {
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 4px;
+    padding-left: 4px;
+  }
+
+  .hero__wrapper-text {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .hero__booking {
+    max-width: 117px;
+    min-height: 27px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 13px 7px;
+  }
+}

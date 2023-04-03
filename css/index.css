@@ -1,0 +1,20 @@
+@import 'var.css';
+@import 'style.css';
+@import 'index/header.css';
+@import 'index/logo.css';
+@import 'index/navigation.css';
+@import 'index/hero.css';
+@import 'index/holiday.css';
+@import 'index/hall.css';
+@import 'index/booking.css';
+@import 'index/form.css';
+@import 'index/about.css';
+@import 'index/reviews.css';
+@import 'index/faq.css';
+@import 'index/footer.css';
+
+/* vibes */
+
+@import 'room/hero-room.css';
+@import 'room/about-room.css';
+@import 'room/another-room.css';
