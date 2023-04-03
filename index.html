@@ -216,21 +216,45 @@
             <fieldset class="form__fieldset form__fieldset_button">
               <legend class="form__legend">Выбери зал</legend>
 
-              <label class="form__label">
-                <input class="form__input-button" type="button" name="hall" value="80's vibes" />
-              </label>
+              <input
+                class="form__input-button form__input-button_hidden"
+                type="radio"
+                name="hall"
+                value="80's vibes"
+                id="80s-vibes"
+                tabindex="-1"
+              />
+              <label class="form__label form__label-hall" for="80s-vibes" tabindex="0">80’s&nbsp;vibes</label>
 
-              <label class="form__label">
-                <input class="form__input-button" type="button" name="hall" value="star wars" />
-              </label>
+              <input
+                class="form__input-button form__input-button_hidden"
+                type="radio"
+                name="hall"
+                value="star wars"
+                id="star-wars"
+                tabindex="-1"
+              />
+              <label class="form__label form__label-hall" for="star-wars" tabindex="0">Star wars</label>
 
-              <label class="form__label">
-                <input class="form__input-button" type="button" name="hall" value="wild west" />
-              </label>
+              <input
+                class="form__input-button form__input-button_hidden"
+                type="radio"
+                name="hall"
+                value="wild west"
+                id="wild-west"
+                tabindex="-1"
+              />
+              <label class="form__label form__label-hall" for="wild-west" tabindex="0">wild west</label>
 
-              <label class="form__label">
-                <input class="form__input-button" type="button" name="hall" value="neon style" />
-              </label>
+              <input
+                class="form__input-button form__input-button_hidden"
+                type="radio"
+                name="hall"
+                value="neon style"
+                id="neon-style"
+                tabindex="-1"
+              />
+              <label class="form__label form__label-hall" for="neon-style" tabindex="0">neon style</label>
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset_game">
@@ -304,11 +328,11 @@
 
               <div class="form__label-wrapper">
                 <label class="form__label-time form__label-date">
-                  <input class="form__input-date" type="date" name="date" required />
+                  <input class="form__input-date" type="date" name="date" required placeholder="Дата" />
                 </label>
 
                 <label class="form__label-time">
-                  <input class="form__input-time" type="time" name="time" required />
+                  <input class="form__input-time" type="time" name="time" required placeholder="Время" />
                 </label>
               </div>
 

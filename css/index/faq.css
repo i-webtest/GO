@@ -58,7 +58,12 @@
   transform: translate(-50%, -50%);
 }
 
-.faq__item-btn__odd:hover {
+/* .faq__item-btn__odd:hover {
+  color: #fff;
+  background-color: var(--purple-color);
+} */
+
+.faq__item:hover .faq__item-btn__odd {
   color: #fff;
   background-color: var(--purple-color);
 }
@@ -68,7 +73,7 @@
   background-color: transparent;
 }
 
-.faq__item-btn__even:hover {
+.faq__item:hover .faq__item-btn__even {
   color: var(--purple-color);
   background-color: #fff;
 }
