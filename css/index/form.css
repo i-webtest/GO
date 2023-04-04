@@ -210,6 +210,10 @@
   line-height: 16px;
 }
 
+.form__input {
+  padding: 12px 20px;
+}
+
 .form__input-date {
   position: relative;
   width: 134px;

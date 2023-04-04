@@ -125,6 +125,19 @@
   .faq__item-btn-open {
     color: var(--purple-color)
   }
+
+  .faq__item-btn__even {
+    color: var(--purple-color);
+  }
+
+  .faq__item:hover .faq__item-btn__even {
+    background-color: var(--purple-color);
+  }
+
+  .faq__item:hover .faq__item-btn-open {
+    color: #fff;
+    /* background-color: #fff; */
+  }
 }
 
 @media(max-width: 1000px) {
