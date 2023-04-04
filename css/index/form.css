@@ -106,7 +106,7 @@
 }
 
 .form__input-radio:focus {
-  border: 1px solid var(--main-color);
+  outline: 1px solid var(--main-color);
 }
 
 .form__fieldset-desktop {
@@ -131,7 +131,7 @@
 }
 
 .form__input-checkbox:focus {
-  border: 1px solid var(--main-color);
+  outline: 1px solid var(--main-color);
 }
 
 .form__label-desktop {

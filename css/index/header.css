@@ -42,6 +42,10 @@
   background-color: var(--light-purple);
 }
 
+.header__btn-menu:focus {
+  outline: 1px solid var(--main-color);
+}
+
 .header__order {
   position: relative;
   top: 2px;
