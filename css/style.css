@@ -98,6 +98,10 @@ iframe {
   margin-bottom: 40px;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 /*
 Доступно скрываю элементы
 */
