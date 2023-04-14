@@ -49,20 +49,25 @@
 }
 
 @media (max-width: 1000px) {
-  .navigation-mobile {
+  .navigation {
     position: fixed;
     inset: 0;
-    top: 107px;
+    top: -100%;
     display: none;
     background-color: rgba(27, 26, 27, 0.7);
+    transition: top .3s ease-in-out;
     overflow-y: auto;
     cursor: pointer;
     padding: 0 40px;
     z-index: 2;
   }
 
-  .navigation_active {
+  /* .navigation_active {
     display: flex;
+  } */
+  .navigation.active {
+    display: flex;
+    top: 107px;
   }
 
   .navigation__list {
@@ -82,6 +87,10 @@
   .navigation {
     top: 71px;
     padding: 0 20px;
+  }
+
+  .navigation.active {
+    top: 71px;
   }
 
   .navigation__list {
