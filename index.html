@@ -13,9 +13,20 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#1B1A1B" />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
 
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
     <script defer src="js/index.js" type="module"></script>
 
     <title>GAME OVER</title>
@@ -446,99 +457,79 @@
         </div>
       </section>
 
-      <section class="faq" id="faq">
+      <section class="faq acc" id="faq">
         <div class="container">
           <h2 class="faq__title">Частые вопросы</h2>
 
-          <ul class="faq__list">
-            <li class="faq__item">
-              <h3 class="faq__item-title">Можно ли забронировать комнату онлайн?</h3>
+          <ul class="acc__list">
+            <li class="acc__item">
+              <h3 class="acc__button">
+                <span class="acc__title">Можно ли забронировать комнату онлайн?</span>
+              </h3>
 
-              <button class="faq__item-btn faq__item-btn__odd">
-                <svg
-                  class="faq__item-btn-open faq__item-btn__odd-open"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+              <p class="acc__text">
+                Да, забронировать комнату вы&nbsp;можете онлайн, заполнив форму на&nbsp;нашем сайте. Также
+                вы&nbsp;можете забронировать комнату позвонив по&nbsp;телефону
+                <a class="acc__tel" href="tel:89999584838" aria-label="Ссылка на номер телефона"
+                  >8&nbsp;(999) 958 - 48 - 38</a
                 >
-                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
-                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
-                </svg>
-              </button>
+              </p>
             </li>
 
-            <li class="faq__item">
-              <h3 class="faq__item-title">Могут ли мне вернуть деньги за бронь?</h3>
+            <li class="acc__item">
+              <h3 class="acc__button">
+                <span class="acc__title">Могут ли мне вернуть деньги за бронь?</span>
+              </h3>
 
-              <button class="faq__item-btn faq__item-btn__even">
-                <svg
-                  class="faq__item-btn-open faq__item-btn__even-open"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+              <p class="acc__text">
+                Да, забронировать комнату вы&nbsp;можете онлайн, заполнив форму на&nbsp;нашем сайте. Также
+                вы&nbsp;можете забронировать комнату позвонив по&nbsp;телефону
+                <a class="acc__tel" href="tel:89999584838" aria-label="Ссылка на номер телефона"
+                  >8&nbsp;(999) 958 - 48 - 38</a
                 >
-                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
-                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
-                </svg>
-              </button>
+              </p>
             </li>
 
-            <li class="faq__item">
-              <h3 class="faq__item-title">Какая комната самая популярная?</h3>
+            <li class="acc__item">
+              <h3 class="acc__button">
+                <span class="acc__title">Какая комната самая популярная?</span>
+              </h3>
 
-              <button class="faq__item-btn faq__item-btn__odd">
-                <svg
-                  class="faq__item-btn-open faq__item-btn__odd-open"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+              <p class="acc__text">
+                Да, забронировать комнату вы&nbsp;можете онлайн, заполнив форму на&nbsp;нашем сайте. Также
+                вы&nbsp;можете забронировать комнату позвонив по&nbsp;телефону
+                <a class="acc__tel" href="tel:89999584838" aria-label="Ссылка на номер телефона"
+                  >8&nbsp;(999) 958 - 48 - 38</a
                 >
-                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
-                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
-                </svg>
-              </button>
+              </p>
             </li>
 
-            <li class="faq__item">
-              <h3 class="faq__item-title">Как получить VIP карту?</h3>
+            <li class="acc__item">
+              <h3 class="acc__button">
+                <span class="acc__title">Как получить VIP карту?</span>
+              </h3>
 
-              <button class="faq__item-btn faq__item-btn__even">
-                <svg
-                  class="faq__item-btn-open faq__item-btn__even-open"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+              <p class="acc__text">
+                Да, забронировать комнату вы&nbsp;можете онлайн, заполнив форму на&nbsp;нашем сайте. Также
+                вы&nbsp;можете забронировать комнату позвонив по&nbsp;телефону
+                <a class="acc__tel" href="tel:89999584838" aria-label="Ссылка на номер телефона"
+                  >8&nbsp;(999) 958 - 48 - 38</a
                 >
-                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
-                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
-                </svg>
-              </button>
+              </p>
             </li>
 
-            <li class="faq__item">
-              <h3 class="faq__item-title">Какая комната самая популярная?</h3>
+            <li class="acc__item">
+              <h3 class="acc__button">
+                <span class="acc__title">Какая комната самая популярная?</span>
+              </h3>
 
-              <button class="faq__item-btn faq__item-btn__odd">
-                <svg
-                  class="faq__item-btn-open faq__item-btn__odd-open"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+              <p class="acc__text">
+                Да, забронировать комнату вы&nbsp;можете онлайн, заполнив форму на&nbsp;нашем сайте. Также
+                вы&nbsp;можете забронировать комнату позвонив по&nbsp;телефону
+                <a class="acc__tel" href="tel:89999584838" aria-label="Ссылка на номер телефона"
+                  >8 (999) 958 - 48 - 38</a
                 >
-                  <path d="M9.83051 0H10.5085V20H9.83051V0Z" />
-                  <path d="M0 10.1695V9.49153H20V10.1695H0Z" />
-                </svg>
-              </button>
+              </p>
             </li>
           </ul>
         </div>
@@ -653,7 +644,7 @@
             </ul>
           </address>
 
-          <img src="img/index/footer/map.jpg" alt="Карта" class="footer__map" />
+          <div id="map" style="width: 680px; height: 274px"></div>
         </div>
 
         <div class="footer__developer-wrapper">
@@ -683,17 +674,19 @@
         <h2 class="modal__title">Заказать звонок</h2>
 
         <form action="" class="modal__form">
-          <label for="" class="modal__form-label">
-            Имя
-            <input class="modal__form-input" type="text" name="name" required />
-          </label>
+          <fieldset class="modal__fieldset">
+            <label for="" class="modal__form-label">
+              Имя
+              <input class="modal__form-input modal__form-input_name" type="text" name="name" required />
+            </label>
 
-          <label for="" class="modal__form-label">
-            Телефон
-            <input class="modal__form-input" type="tel" name="phone" required />
-          </label>
+            <label for="" class="modal__form-label">
+              Телефон
+              <input class="modal__form-input modal__form-input_tel" type="tel" name="phone" required />
+            </label>
 
-          <button class="modal__form-submit" type="submit">Позвонить мне</button>
+            <button class="modal__form-submit" type="submit">Позвонить мне</button>
+          </fieldset>
         </form>
       </div>
     </div>

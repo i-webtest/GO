@@ -1,0 +1,239 @@
+.acc__item {
+  background-color: #fff;
+  margin-bottom: 21px;
+}
+
+.acc__item:nth-child(2n) {
+  color: #fff;
+  background-color: var(--second-color);
+}
+
+.acc__item:last-child {
+  margin-bottom: 0;
+}
+
+.acc__button {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  min-height: 46px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--acc-btn);
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 20px 70px;
+}
+
+.acc__item:nth-child(2n) .acc__button {
+  color: #fff;
+}
+
+.acc__title {
+  margin-right: 10px;
+}
+
+.acc__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  padding: 57px 70px 100px;
+}
+
+.acc__item:nth-child(2n) .acc__text {
+  background-color: #fff;
+}
+
+.acc__tel {
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+}
+
+.acc__tel:hover {
+  color: var(--main-color);
+}
+
+.acc__icon {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border: 2px solid var(--purple-color);
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+.acc__icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 1px;
+  background-color: var(--purple-color);
+  transition: all .3s ease-in-out;
+}
+
+.acc__icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 20px;
+  height: 1px;
+  background-color: var(--purple-color);
+  transition: all .3s ease-in-out;
+}
+
+.acc__item:nth-child(2n) .acc__icon {
+  border: 2px solid #fff;
+}
+
+.acc__item:nth-child(2n) .acc__icon::before {
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.acc__item:nth-child(2n) .acc__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  background-color: #fff;
+}
+
+.acc__button:hover .acc__icon {
+  background-color: var(--purple-color);
+}
+
+.acc__button:hover .acc__icon::before {
+  background-color: #fff;
+}
+
+.acc__button:hover .acc__icon::after {
+  background-color: #fff;
+}
+
+.acc__item:nth-child(2n) .acc__button:hover .acc__icon {
+  background-color: #fff;
+}
+
+.acc__item:nth-child(2n) .acc__button:hover .acc__icon::before {
+  background-color: var(--purple-color);
+}
+
+.acc__item:nth-child(2n) .acc__button:hover .acc__icon::after {
+  background-color: var(--purple-color);
+}
+
+.acc__icon-active::after {
+  transform: translate(-50%, -50%);
+}
+
+.acc__item:nth-child(2n) .acc__icon-active::after {
+  transform: translate(-50%, -50%);
+}
+
+@media(max-width: 1200px) {
+  .acc__item {
+    margin-bottom: 16px;
+  }
+
+  .acc__item:nth-child(2n) .acc__button {
+    color: var(--acc-btn);
+    background-color: #fff;
+  }
+
+  .acc__item:nth-child(2n) .acc__icon {
+    border-color: var(--purple-color);
+  }
+
+  .acc__item:nth-child(2n) .acc__icon::before {
+    background-color: var(--purple-color);
+  }
+
+  .acc__item:nth-child(2n) .acc__icon::after {
+    background-color: var(--purple-color);
+  }
+
+  .acc__item:nth-child(2n) .acc__button:hover .acc__icon {
+    background-color: var(--purple-color);
+  }
+
+  .acc__item:nth-child(2n) .acc__button:hover .acc__icon::before {
+    background-color: #fff;
+  }
+
+  .acc__item:nth-child(2n) .acc__button:hover .acc__icon::after {
+    background-color: #fff;
+  }
+
+  .acc__item:last-child {
+    display: none;
+  }
+
+  .acc__button {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 12px 20px 12px 25px;
+  }
+
+  .acc__text {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 50px 20px 50px 25px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .acc__button {
+    font-size: 18px;
+    padding: 12px 65px 12px 54px;
+  }
+
+  .acc__text {
+    font-size: 16px;
+    padding: 12px 65px 30px 54px;
+  }
+}
+
+@media(max-width: 600px) {
+  .acc__item {
+    margin-bottom: 10px;
+  }
+
+  .acc__button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 7px 13px 7px 10px;
+  }
+
+  .acc__icon, .acc__item:nth-child(2n) .acc__icon {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+  }
+
+  .acc__icon::before, .acc__icon::after {
+    width: 13px;
+  }
+
+  .acc__text {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 7px 13px 7px 10px;;
+  }
+}
+
+@media(max-width: 360px) {
+  .acc__title {
+    max-width: 210px;
+  }
+}

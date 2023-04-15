@@ -36,11 +36,11 @@
   color: var(--main-color);
 }
 
-.modal__close:focus {
+/* .modal__close:focus {
   outline-color: var(--main-color);
   color: var(--light-purple);
   padding: 10px;
-}
+} */
 
 .modal__close:active {
   color: var(--light-purple);
@@ -61,6 +61,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.modal__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
 }
 
 .modal__form-label {
