@@ -166,6 +166,11 @@
   text-align: right;
 }
 
+.footer__map {
+  max-width: 680px;
+  height: 274px;
+}
+
 
 @media(max-width: 1200px) {
   .footer {
@@ -224,7 +229,6 @@
 
   .footer__map {
     max-width: 542px;
-    height: 274px;
     object-fit: cover;
   }
 }
