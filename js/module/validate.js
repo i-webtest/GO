@@ -24,13 +24,13 @@ justValidate
         const phone = inputTel.inputmask.unmaskedvalue();
         return !!(Number(phone) && phone.length === 10);
       },
-      errorMessage: 'Укажите не корректный',
+      errorMessage: 'Укажите корректный номер',
     },
   ])
   .onSuccess((event) => {
     const target = event.target;
     axios
-      .post('https://jsonplaceholder.typicode.com/posts', {
+      .post('https://postman-echo.com/post', {
         name: target.name.value,
         phone: target.phone.value,
       })

@@ -1,0 +1,19 @@
+.form__input-date,
+.form__input-time {
+  position: relative;
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 15L1.40673 3.75L19.5933 3.75L10.5 15Z' fill='%23211E1E'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 84px;
+  border: none;
+  cursor: pointer;
+} 
+
+.air-datepicker-cell.-focus- {
+  color: #fff;
+  background-color: var(--purple-color);
+}
+
+.air-datepicker-cell.-current-.-focus- {
+  color: #fff;
+}

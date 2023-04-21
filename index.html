@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
 
+    <script defer src="js/module/plugins/air-datepicker.js"></script>
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -86,7 +87,6 @@
           </svg>
         </a>
 
-        <!-- <div class="header__wrapper"> -->
         <nav class="header__navigation navigation navigation-mobile">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -111,7 +111,6 @@
         </nav>
 
         <button class="header__order order" type="button">Заказать звонок</button>
-        <!-- </div> -->
       </div>
     </header>
 
@@ -227,7 +226,7 @@
         <div class="container">
           <h2 class="booking__title">Забронировать зал просто</h2>
 
-          <form class="booking__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <form class="booking__form form" method="POST">
             <fieldset class="form__fieldset form__fieldset_button">
               <legend class="form__legend">Выбери зал</legend>
 
@@ -318,7 +317,12 @@
                 </label>
 
                 <label class="form__label-desktop">
-                  <input class="form__input-checkbox" type="checkbox" name="game" value="Alias" />
+                  <input
+                    class="form__input-checkbox form__input-checkbox-alias"
+                    type="checkbox"
+                    name="game"
+                    value="Alias"
+                  />
                   Alias
                 </label>
               </fieldset>
@@ -343,11 +347,24 @@
 
               <div class="form__label-wrapper">
                 <label class="form__label-time form__label-date">
-                  <input class="form__input form__input-date" type="date" name="date" required placeholder="Дата" />
+                  <input
+                    class="form__input form__input-date"
+                    id="airdatepicker"
+                    type="text"
+                    name="date"
+                    required
+                    placeholder="Дата"
+                  />
                 </label>
 
-                <label class="form__label-time">
-                  <input class="form__input form__input-time" type="time" name="time" required placeholder="Время" />
+                <label class="form__label-time form__label-date">
+                  <input
+                    class="form__input form__input-time timepicker"
+                    type="text"
+                    name="time"
+                    required
+                    placeholder="Время"
+                  />
                 </label>
               </div>
 
@@ -361,8 +378,20 @@
                 <input class="form__input form__input-phone" type="tel" name="phone" required />
               </label>
 
-              <label class="form__label-time form__label-count">
-                <input class="form__input form__input-count" type="number" name="count" required />
+              <label class="form__label-time form__label-count" for="count">
+                <select name="count" id="count" class="form__input form__input-count">
+                  <option value="" selected>Сколько человек</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
               </label>
 
               <label class="form__label-time form__label-surname">
@@ -372,7 +401,7 @@
 
               <label class="form__label-time form__label-mail">
                 E-mail
-                <input class="form__input form__input-phone" type="email" name="mail" required />
+                <input class="form__input form__input-mail" type="email" name="mail" required />
               </label>
             </fieldset>
 
@@ -417,43 +446,55 @@
         <div class="container">
           <h2 class="reviews__title">Отзывы посетителей</h2>
 
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <figure class="reviews__figure">
-                <img class="reviews__image" src="img/index/reviews/image1.png" alt="Макс Самойлов" height="200" />
-                <figcaption class="reviews__name">Макс Самойлов</figcaption>
-              </figure>
+          <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure class="reviews__figure">
+                    <img class="reviews__image" src="img/index/reviews/image1.png" alt="Макс Самойлов" height="200" />
+                    <figcaption class="reviews__name">Макс Самойлов</figcaption>
+                  </figure>
 
-              <p class="reviews__description">
-                Отмечали здесь день рождения с компанией друзей, всё было очень круто! VR очки это просто бомба, никогда
-                ещё я не был в таком полном игровом погруженни. Сервис на высоте!
-              </p>
-            </li>
+                  <p class="reviews__description">
+                    Отмечали здесь день рождения с компанией друзей, всё было очень круто! VR очки это просто бомба,
+                    никогда ещё я не был в таком полном игровом погруженни. Сервис на высоте!
+                  </p>
+                </div>
 
-            <li class="reviews__item">
-              <figure class="reviews__figure">
-                <img class="reviews__image" src="img/index/reviews/image2.png" alt="Оксана Григорьева" height="200" />
-                <figcaption class="reviews__name">Оксана Григорьева</figcaption>
-              </figure>
+                <div class="swiper-slide">
+                  <figure class="reviews__figure">
+                    <img
+                      class="reviews__image"
+                      src="img/index/reviews/image2.png"
+                      alt="Оксана Григорьева"
+                      height="200"
+                    />
+                    <figcaption class="reviews__name">Оксана Григорьева</figcaption>
+                  </figure>
 
-              <p class="reviews__description">
-                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
-                больше нет подобных заведений.
-              </p>
-            </li>
+                  <p class="reviews__description">
+                    Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
+                    больше нет подобных заведений.
+                  </p>
+                </div>
 
-            <li class="reviews__item">
-              <figure class="reviews__figure">
-                <img class="reviews__image" src="img/index/reviews/image3.png" alt="Никита Ященко" height="200" />
-                <figcaption class="reviews__name">Никита Ященко</figcaption>
-              </figure>
+                <div class="swiper-slide">
+                  <figure class="reviews__figure">
+                    <img class="reviews__image" src="img/index/reviews/image3.png" alt="Никита Ященко" height="200" />
+                    <figcaption class="reviews__name">Никита Ященко</figcaption>
+                  </figure>
 
-              <p class="reviews__description">
-                Немного подвисала игра в VR очках, а так всё норм. Крутое оформление комнаты в стиле звёздных войн,
-                попал в атмосферу космоса.
-              </p>
-            </li>
-          </ul>
+                  <p class="reviews__description">
+                    Немного подвисала игра в VR очках, а так всё норм. Крутое оформление комнаты в стиле звёздных войн,
+                    попал в атмосферу космоса.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-arrow swiper-arrow-prev"></div>
+            <div class="swiper-arrow swiper-arrow-next"></div>
+          </div>
         </div>
       </section>
 

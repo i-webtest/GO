@@ -5,6 +5,17 @@
   margin-bottom: 60px;
 }
 
+.form__fieldset_button {
+  position: relative;
+}
+
+.form__fieldset_button .just-validate-error-label {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .form__legend {
   font-weight: 700;
   font-size: 24px;
@@ -14,6 +25,7 @@
 }
 
 .form__label-hall {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,22 +49,6 @@
   transform: scale(0);
 }
 
-/* .form__input-button {
-  width: 250px;
-  height: 55px;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
-  cursor: pointer;
-  outline: none;
-} */
-
 .form__label-hall:hover {
   background-color: #EADEED;
   border: 3px solid var(--dark-purple);
@@ -74,9 +70,11 @@
 }
 
 .form__fieldset-console {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 280px;
+  height: 219px;
   border: none;
 }
 
@@ -114,6 +112,7 @@
   right: 43px;
   display: flex;
   flex-direction: column;
+  height: 219px;
   border: none;
 }
 
@@ -147,6 +146,7 @@
 }
 
 .form__fieldset-optional {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 200px;
@@ -195,8 +195,42 @@
   display: flex;
   justify-content: space-between;
   width: 300px;
-  height: 52px;
+  height: 74px;
 }
+
+.form__label-time {
+  position: relative;
+  height: 74px;
+}
+
+.form__label-time .just-validate-error-label {
+  position: absolute;
+  right: 0;
+}
+
+.form__label-count .just-validate-error-label,
+.form__label-date .just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.form__fieldset-console .just-validate-error-label,
+.form__fieldset-desktop .just-validate-error-label,
+.form__fieldset-optional .just-validate-error-label {
+  position: absolute;
+  top: -80px;
+}
+
+.form__label-date,
+.form__label-count {
+  display: flex;
+  align-items: flex-end;
+}
+
+ 
 
 .form__label-name, 
 .form__label-surname,
@@ -211,6 +245,8 @@
 }
 
 .form__input {
+  font-size: 18px;
+  line-height: 16px;
   padding: 12px 20px;
 }
 
@@ -222,25 +258,13 @@
   outline: none;
 }
 
-.form__input-date::placeholder {
+.form__input-date::placeholder,
+.form__input-time::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #211E1E;
 }
-
-/* .form__input-date::-webkit-datetime-edit {
-  display: none;
-} */
-
-/* .form__input-date::-webkit-calendar-picker-indicator {
-  position: absolute;
-  right: 22px;
-  top: 17px;
-  width: 21px;
-  height: 15px;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z' fill='%23211E1E'/%3E%3C/svg%3E%0A");
-} */
 
 .form__input-time {
   width: 134px;
@@ -254,6 +278,8 @@
 .form__input-surname {
   width: 280px;
   height: 52px;
+  /* font-size: 18px;
+  line-height: 16px; */
   transition: border 0.2s ease-in-out;
   outline: none;
 }
@@ -330,7 +356,7 @@
     display: grid;
     grid-template-columns: 280px 289px 255px;
     column-gap: 40px;
-    margin: 0 auto 57px;
+    margin: 0 auto 60px;
   }
 
   .form__fieldset-desktop {
@@ -341,13 +367,24 @@
     flex-basis: 236px;
   }
 
-  .form__input-name,
-  .form__input-surname {
+  .form__label-name,
+  .form__label-surname {
     width: 251px;
   }
 
-  .form__input-phone {
-    width: 252px;
+  .form__label-phone,
+  .form__label-mail {
+    width: 254px;
+  }
+
+  .form__input-name,
+  .form__input-surname {
+    width: 100%;
+  }
+
+  .form__input-phone,
+  .form__input-mail {
+    width: 100%;
   }
 
   .form__fieldset-time {
@@ -358,6 +395,16 @@
     font-size: 18px;
     line-height: 24px;
     padding: 13px 46px;
+  }
+
+  .form__fieldset_button .just-validate-error-label {
+    top: -24px;
+  }
+
+  .form__fieldset-console .just-validate-error-label,
+  .form__fieldset-desktop .just-validate-error-label,
+  .form__fieldset-optional .just-validate-error-label {
+    top: -74px;
   }
 }
 
@@ -414,7 +461,7 @@
   }
 
   .form__legend-time {
-    margin-bottom: 30px;
+    margin-bottom: 8px;
   }
 
   .form__label-wrapper {
@@ -423,6 +470,7 @@
   }
 
   .form__label-name {
+    width: 280px;
     order: 3;
   }
 
@@ -435,6 +483,7 @@
   }
 
   .form__label-phone {
+    width: 300px;
     order: 4;
   }
 
@@ -443,6 +492,7 @@
   }
 
   .form__label-surname {
+    width: 280px;
     order: 5;
   }
 
@@ -451,6 +501,7 @@
   }
 
   .form__label-mail {
+    width: 300px;
     order: 6;
   }
 
@@ -473,7 +524,7 @@
   }
 
   .form__legend-time {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   .form__fieldset_button {
@@ -495,6 +546,7 @@
     grid-template-rows: repeat(3, auto);
     row-gap: 25px;
     justify-items: center;
+    margin-bottom: 10px;
   }
 
   .form__input-radio {
@@ -520,8 +572,13 @@
     width: 100%;
   }
 
+  .form__fieldset-console {
+    height: 199px;
+  }
+
   .form__fieldset-desktop {
     grid-column-start: 1;
+    height: 213px;
   }
 
   .form__input-checkbox {
@@ -537,6 +594,7 @@
 
   .form__fieldset-optional {
     height: auto;
+    margin-bottom: 20px;
   }
 
   .form__fieldset-time {
@@ -547,8 +605,13 @@
   }
 
   .form__label-wrapper {
+    height: 52px;
     width: 280px;
     margin-bottom: 0;
+  }
+
+  .form__label-date {
+    height: 100%;
   }
 
   .form__label-surname {
@@ -558,6 +621,21 @@
   .form__label-count,
   .form__label-surname {
     margin-bottom: 20px;
+  }
+
+  .form__label-count {
+    width: 280px;
+    height: 52px;
+  }
+
+  .form__label-phone,
+  .form__label-mail {
+    width: 280px;
+  }
+
+  .form__input-date::placeholder,
+  .form__input-time::placeholder {
+    font-size: 14px;
   }
 
   .form__input-count,
@@ -576,5 +654,33 @@
     border-radius: 4px;
     box-shadow: 0 0 5px #ffffff;
     padding: 17px 58px;
+  }
+
+  .form__label-count .just-validate-error-label,
+  .form__label-date .just-validate-error-label {
+    top: -14px;
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+  .form__fieldset-console .just-validate-error-label,
+  .form__fieldset-desktop .just-validate-error-label,
+  .form__fieldset-optional .just-validate-error-label,
+  .form__fieldset_button .just-validate-error-label,
+  .form__label-count .just-validate-error-label,
+  .form__label-date .just-validate-error-label,
+  .form__label-time .just-validate-error-label {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .form__fieldset_button .just-validate-error-label {
+    top: -16px;
+  }
+
+  .form__fieldset-console .just-validate-error-label,
+  .form__fieldset-desktop .just-validate-error-label,
+  .form__fieldset-optional .just-validate-error-label {
+    top: -44px;
   }
 }

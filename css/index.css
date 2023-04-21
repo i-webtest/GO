@@ -21,3 +21,14 @@
 @import 'room/hero-room.css';
 @import 'room/about-room.css';
 @import 'room/another-room.css';
+
+/* plugins */
+
+@import 'plugins/choices.min.css';
+@import 'plugins/air-datepicker.css';
+@import 'plugins/jquery.timepicker.css';
+@import 'plugins/swiper-bundle.min.css';
+/* -- */
+@import 'index/choices.css';
+@import 'index/customInputDate.css';
+@import 'index/swiper.css';
